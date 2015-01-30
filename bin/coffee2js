@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+coffee --map -c $1
+[[ -f $OUTPUT ]] || (>&2 echo "error: $0: no $OUTPUT found")

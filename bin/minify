@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+cc=./node_modules/uglify/bin/uglify
+
+[[ ! -f $cc ]] && echo "no uglify found" && exit 1
+$cc -s "$(echo $@ | tr -s ' ' ',')" -o $OUTPUT
+[[ -f $OUTPUT ]] || (>&2 echo "error: $0: no $OUTPUT found")
