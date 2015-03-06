@@ -29,7 +29,7 @@
   occurs. It also doesn't set an exit code. It
   also takes a _comma-delimited list_ instead of
   using `[-s FILE [-s FILE ...]]` like every other
-  Unix command. It alos prints out _everything_
+  Unix command. It also prints out _everything_
   when it's succeeding, violating the "success
   means no output" rule of compilers.
 
